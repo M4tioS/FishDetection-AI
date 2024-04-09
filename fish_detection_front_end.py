@@ -19,7 +19,7 @@ button { /* Your button styles */ }
 </style>
 """, unsafe_allow_html=True)
 
-BACKEND_URL = "http://localhost:8000/process-videos/"
+BACKEND_URL = "https://sleepy-sands-32273-3dcb603050d0.herokuapp.com/"
 
 def send_files_to_backend(uploaded_files):
     logging.info(f"Sending {len(uploaded_files)} files to backend for processing.")

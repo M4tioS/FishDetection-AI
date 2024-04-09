@@ -150,14 +150,5 @@ def determine_direction(centroids):
     return "Right" if dx > 0 else "Left"
 
 
-
-
-### Add logic with checkbox to know if the video was correctly classified
-### All boxes start with being checked (correctly classified), unchecking box means the video was incorrectly classified
-### Incorrect classifications would be logged into a file classification_error.txt.
-### Logs for classification_error.txt would be name of the video, prediction, and true prediction, data and time
-
-
-
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)

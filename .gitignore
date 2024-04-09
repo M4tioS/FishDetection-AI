@@ -1,0 +1,10 @@
+# Ignore all .txt files
+*.txt
+
+# Ignore all .log files
+*.log
+
+# However, do not ignore .streamlit file
+!.streamlit
+
+*.PAL
