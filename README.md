@@ -20,8 +20,10 @@ This project uses machine learning to automate fish detection and classification
 ## Video Demonstration
 Watch the video below to see how the model works in action:
 
-Click the image above to watch the video.
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7WN3_WBu5Lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Fish Detection Demo](https://img.youtube.com/vi/7WN3_WBu5Lw/0.jpg)](https://www.youtube.com/watch?v=7WN3_WBu5Lw)
+
+*Click the image above to watch the video.*
+
 
 
 ## Features
