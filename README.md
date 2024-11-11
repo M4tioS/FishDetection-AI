@@ -2,19 +2,25 @@
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Dataset](#dataset)
-6. [Model](#model)
-7. [Performance & Metrics](#performance--metrics)
-8. [System Architecture](#system-architecture)
-9. [Video Demonstration](#video-demonstration)
+2. [Video Demonstration](#video-demonstration)
+3. [Features](#features)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Dataset](#dataset)
+7. [Model](#model)
+8. [Performance & Metrics](#performance--metrics)
+9. [System Architecture](#system-architecture)
 10. [License](#license)
 11. [Acknowledgements](#acknowledgements)
 
 ## Project Overview
 This project uses machine learning to automate fish detection and classification in underwater videos. Developed to support ecological monitoring, the system significantly improves efficiency by reducing manual review efforts, enabling real-time fish detection in Icelandic rivers.
+
+
+## Video Demonstration
+Watch the video below to see how the model works in action:
+
+Click the image above to watch the video.
 
 ## Features
 - **Real-time Fish Detection**: Quickly identifies fish in videos, classifying species when possible.
@@ -94,10 +100,6 @@ The system operates with a modular backend. Key components include:
 - Periodic Model Updates: Includes scheduled retraining and data augmentation for ongoing performance improvement.
 - Error Model Updates: Includes analyzing and retraining the model on data that was marked incorrectly labeled by the user
 
-## Video Demonstration
-Watch the video below to see how the model works in action:
-
-Click the image above to watch the video.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
