@@ -78,6 +78,10 @@ The dataset is sourced from the Marine and Freshwater Research Institute in Icel
 - **Video without Fish**  
   ![No Fish GIF](no_fish_sample.gif)
 
+  ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
+
 # Model
 The system initially used a standard CNN, later transitioning to a YOLOv5 model for more efficient real-time video processing. Further model optimizations include:
 
