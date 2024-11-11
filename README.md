@@ -28,7 +28,7 @@ To set up the project locally, follow these steps:
 
 ### Clone the repository
 ```bash
-git clone https://github.com/yourusername/fish-detection-ai.git
+git clone https://github.com/Pebble32/fish-detection-ai.git
 ```
 
 ### Navigate to the project directory
