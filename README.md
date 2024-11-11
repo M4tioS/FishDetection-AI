@@ -76,33 +76,33 @@ Gif of fish, gif of no fish
 # Model
 The system initially used a standard CNN, later transitioning to a YOLOv5 model for more efficient real-time video processing. Further model optimizations include:
 
-- Quick Stopping: Reduces average processing time for videos with detected fish from 17-20 seconds to about 3.5 seconds, a 55.6% improvement. (Later dropped in favor of anomaly detection)
-- Nano Model Integration: Reduces processing time for videos without fish to approximately 11 seconds, improving efficiency by 66.2%. (Later dropped in favor of downsampling with anomaly detection)
-- Future Enhancements: Potential for YOLOv8 or YOLOv9 integration to improve recall and precision further. From initial testing YOLOv8 has higher recall and YOLOv9 has higher precission. In this project higher recall is more optimal.
-- Frame skipping: After calculations and testing we found that we can only focus on every third frame and not lose any fish in Icelandic rivers that improves our classification speed by around 33%. 
-- Anomaly Detection with Downsampling: Reduce image size and compare each frame with decaying average of previous frames to see if there is a significant difference. After testing multiple ways of detection this one proved to be most effective allowing us to classify each video in under 1 second acompanied with frame skipping 
+- **Quick Stopping**: Reduces average processing time for videos with detected fish from 17-20 seconds to about 3.5 seconds, a 55.6% improvement. *(Later dropped in favor of anomaly detection)*
+- **Nano Model Integration**: Reduces processing time for videos without fish to approximately 11 seconds, improving efficiency by 66.2%. *(Later dropped in favor of downsampling with anomaly detection)*
+- **Future Enhancements**: Potential for YOLOv8 or YOLOv9 integration to improve recall and precision further. From initial testing YOLOv8 has higher recall and YOLOv9 has higher precission. In this project higher recall is more optimal.
+- **Frame skipping**: After calculations and testing we found that we can only focus on every third frame and not lose any fish in Icelandic rivers that improves our classification speed by around 33%. 
+- **Anomaly Detection with Downsampling**: Reduce image size and compare each frame with decaying average of previous frames to see if there is a significant difference. After testing multiple ways of detection this one proved to be most effective allowing us to classify each video in under 1 second acompanied with frame skipping 
 Note: Model weights are not provided in this repository.
 
 ## Performance & Metrics
 The project’s key performance indicators are accuracy, precision, recall, F1 score, and AUC, with the following baseline results:
 
-- Accuracy: ~90% for YOLOv5
-- Efficiency: Average processing time reduced by up to 98%
-- Precision: Achieved over 95%, highlighting the high accuracy of positive fish detections.
-- Recall: Stabilized around 96%, demonstrating the model's ability to capture true positives consistently.
-- F1 Score: Approximetly 95.5%.
-- AUC (Area Under the ROC Curve): Achived 0.9778
-- mAP (Mean Average Precision):
-  - mAP@0.5: Exceeded 97%, indicating excellent object detection performance at a 0.5 IoU threshold.
-  - mAP@0.5:0.95: Reached ~83%, showing robust performance across a range of IoU thresholds for different object sizes and complexities.
+- **Accuracy**: ~90% for YOLOv5
+- **Efficiency**: Average processing time reduced by up to 98%
+- **Precision**: Achieved over 95%, highlighting the high accuracy of positive fish detections.
+- **Recall**: Stabilized around 96%, demonstrating the model's ability to capture true positives consistently.
+- **F1 Score**: Approximetly 95.5%.
+- **AUC (Area Under the ROC Curve)**: Achived 0.9778
+- **mAP (Mean Average Precision)**:
+  - **mAP@0.5**: Exceeded 97%, indicating excellent object detection performance at a 0.5 IoU threshold.
+  - **mAP@0.5:0.95**: Reached ~85%, showing robust performance across a range of IoU thresholds for different object sizes and complexities.
 
 ## System Architecture
 The system operates with a modular backend. Key components include:
 
-- Logging & Monitoring: Tracks processing times, model performance, and user interactions.
-- Anomaly Detection: Incorporates down-sampling and frame-skipping for improved efficiency.
-- Periodic Model Updates: Includes scheduled retraining and data augmentation for ongoing performance improvement.
-- Error Model Updates: Includes analyzing and retraining the model on data that was marked incorrectly labeled by the user
+- **Logging & Monitoring**: Tracks processing times, model performance, and user interactions.
+- **Anomaly Detection**: Incorporates down-sampling and frame-skipping for improved efficiency.
+- **Periodic Model Updates**: Includes scheduled retraining and data augmentation for ongoing performance improvement.
+- **Error Model Updates**: Includes analyzing and retraining the model on data that was marked incorrectly labeled by the user
 
 
 ## License
