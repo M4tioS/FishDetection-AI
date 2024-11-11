@@ -21,6 +21,8 @@ This project uses machine learning to automate fish detection and classification
 Watch the video below to see how the model works in action:
 
 Click the image above to watch the video.
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=7WN3_WBu5Lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Features
 - **Real-time Fish Detection**: Quickly identifies fish in videos, classifying species when possible.
