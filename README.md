@@ -69,16 +69,8 @@ streamlit run fish_detection_front_end.py
 
 
 ## Dataset
-The dataset is sourced from the Marine and Freshwater Research Institute in Iceland, consisting of 20-40 second video clips captured in Icelandic rivers. Approximately 71% of these videos contain fish. Due to confidentiality, the actual dataset cannot be shared, but similar datasets could be used for similar purposes. Examples below show how the data looks like. 
+The dataset is sourced from the Marine and Freshwater Research Institute in Iceland, consisting of 20-40 second video clips captured in Icelandic rivers. Approximately 71% of these videos contain fish. Due to confidentiality, the actual dataset cannot be shared, but similar datasets could be used for similar purposes. 
 
-### Examples:
-- **Video with Fish**  
-  ![Fish GIF](fish_gif.gif)
-
-- **Video without Fish**  
-  ![No Fish GIF](no_fish_sample.gif)
-
-  ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
 
