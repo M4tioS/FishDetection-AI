@@ -20,7 +20,7 @@ This project uses machine learning to automate fish detection and classification
 ## Video Demonstration
 Watch the video below to see how the model works in action:
 
-[![Fish Detection Demo](https://img.youtube.com/vi/7WN3_WBu5Lw/0.jpg)](https://www.youtube.com/watch?v=7WN3_WBu5Lw)
+[![Fish Detection Demo](fish.png)](https://drive.google.com/drive/home)
 
 *Click the image above to watch the video.*
 
@@ -38,7 +38,7 @@ To set up the project locally, follow these steps:
 
 ### Clone the repository
 ```bash
-git clone https://github.com/Pebble32/fish-detection-ai.git
+git clone https://github.com/M4tioS/FishDetection-AI.git
 ```
 
 ### Navigate to the project directory
